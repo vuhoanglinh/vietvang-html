@@ -18,9 +18,10 @@
     <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
     <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/jquery.backstretch.min.js" type="text/javascript"></script>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
+    <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+    <script src="js/jquery.stellar.js" type="text/javascript"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,700italic,500italic,400italic,900,900italic' rel='stylesheet' type='text/css'>
     
     <!-- Silder -->
     <link rel="stylesheet" type="text/css" href="css/slider/demo.css" />
@@ -38,13 +39,16 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="row-fluid">
+    <header class="header" data-stellar-background-ratio="0.5">
         <div class="container">            
             <div class="logo-top">
-                <img src="images/logo.png" class="img-responsive center-block" title="Logo Viet Vang">
+                <img src="images/vietvang-logo.png" class="img-responsive center-block" title="Logo Viet Vang">
             </div>    
             <div class="logo-bottom">
                 Your problem, our software solution!
+            </div>
+            <div class="button">
+                <a href="" class="btn btn-header">ABOUT US</a> <a href="" class="btn btn-header active">Portfolio</a>
             </div>
             <div class="flag">
                 <a href="#" class="btn"><img src="images/vi.jpg"></a>  
@@ -53,7 +57,6 @@
             </div>
         </div>
     </header>
-    <!-- End Header -->
     
     <!--Navigation -->
     <nav id="navigation" class="navbar" role="navigation">
@@ -111,58 +114,63 @@
 				
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 						<div class="sl-slide-inner">
-							<div class="bg-img"><img src="images/slider1.jpg"></div>
-                            <div class="container">
-                                <h2>LỜI CHÀO CỦA<br> <b>GIÁM ĐỐC</b></h2>
-                                <blockquote class="text-justify">Tại các nước có ngành công nghiệp đã phát triển thì nghiễm nhiên sau đó ngành IT cũng phát triển theo. Còn đối với các nước phát triển trễ hơn, hiện đang tập trung công nghiệp hóa (ví dụ Việt Nam) thì bắt buộc phải song song phát triển ngành IT.</blockquote>                                
-                                <blockquote class="text-right"><a href="about.html" class="btn btn-slide">XEM THÊM</a></blockquote>
-                            </div>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<div class="bg-img"><img src="images/slider1.jpg"></div>
-                            <div class="container">
-                                <h2>LỜI CHÀO  CỦA<br> <b>GIÁM ĐỐC</b></h2>
-                                <blockquote class="text-justify">Tại các nước có ngành công nghiệp đã phát triển thì nghiễm nhiên sau đó ngành IT cũng phát triển theo. Còn đối với các nước phát triển trễ hơn, hiện đang tập trung công nghiệp hóa (ví dụ Việt Nam) thì bắt buộc phải song song phát triển ngành IT.</blockquote>
-                                <blockquote class="text-right"><a href="about.html" class="btn btn-slide">XEM THÊM</a></blockquote>
+							<div class="bg-img"></div>
+                            <div class="container" class="text-center">
+                                <h2 >LỜI CHÀO CỦA GIÁM ĐỐC</h2>
+                                <blockquote><em>Tại các nước có ngành công nghiệp đã phát triển thì nghiễm nhiên sau đó ngành IT cũng phát triển theo. Còn đối với các nước phát triển trễ hơn, hiện đang tập trung công nghiệp hóa (ví dụ Việt Nam) thì bắt buộc phải song song phát triển ngành IT.</em></blockquote>                                
+                                <blockquote><img src="images/giamdoc.jpg" class="img-circle"></blockquote>
+                                <blockquote><a href="about.html" class="btn btn-slide">XEM THÊM</a></blockquote>
                             </div>
 						</div>
 					</div>	
                     
-                    <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 						<div class="sl-slide-inner">
-							<div class="bg-img"><img src="images/slider1.jpg"></div>
-                            <div class="container">
-                                <h2>LỜI CHÀO  CỦA<br> <b>GIÁM ĐỐC</b></h2>
-                                <blockquote class="text-justify">Tại các nước có ngành công nghiệp đã phát triển thì nghiễm nhiên sau đó ngành IT cũng phát triển theo. Còn đối với các nước phát triển trễ hơn, hiện đang tập trung công nghiệp hóa (ví dụ Việt Nam) thì bắt buộc phải song song phát triển ngành IT.</blockquote>
-                                <blockquote class="text-right"><a href="about.html" class="btn btn-slide">XEM THÊM</a></blockquote>
+							<div class="bg-img"></div>
+                            <div class="container" class="text-center">
+                                <h2 >LỜI CHÀO CỦA GIÁM ĐỐC</h2>
+                                <blockquote><em>Tại các nước có ngành công nghiệp đã phát triển thì nghiễm nhiên sau đó ngành IT cũng phát triển theo. Còn đối với các nước phát triển trễ hơn, hiện đang tập trung công nghiệp hóa (ví dụ Việt Nam) thì bắt buộc phải song song phát triển ngành IT.</em></blockquote>                                
+                                <blockquote><img src="images/giamdoc.jpg" class="img-circle"></blockquote>
+                                <blockquote><a href="about.html" class="btn btn-slide">XEM THÊM</a></blockquote>
                             </div>
 						</div>
-					</div>
+					</div>	
                     
-                    <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 						<div class="sl-slide-inner">
-							<div class="bg-img"><img src="images/slider1.jpg"></div>
-                            <div class="container">
-                                <h2>LỜI CHÀO  CỦA<br> <b>GIÁM ĐỐC</b></h2>
-                                <blockquote class="text-justify">Tại các nước có ngành công nghiệp đã phát triển thì nghiễm nhiên sau đó ngành IT cũng phát triển theo. Còn đối với các nước phát triển trễ hơn, hiện đang tập trung công nghiệp hóa (ví dụ Việt Nam) thì bắt buộc phải song song phát triển ngành IT.</blockquote>
-                                <blockquote class="text-right"><a href="about.html" class="btn btn-slide">XEM THÊM</a></blockquote>
+							<div class="bg-img"></div>
+                            <div class="container" class="text-center">
+                                <h2 >LỜI CHÀO CỦA GIÁM ĐỐC</h2>
+                                <blockquote><em>Tại các nước có ngành công nghiệp đã phát triển thì nghiễm nhiên sau đó ngành IT cũng phát triển theo. Còn đối với các nước phát triển trễ hơn, hiện đang tập trung công nghiệp hóa (ví dụ Việt Nam) thì bắt buộc phải song song phát triển ngành IT.</em></blockquote>                                
+                                <blockquote><img src="images/giamdoc.jpg" class="img-circle"></blockquote>
+                                <blockquote><a href="about.html" class="btn btn-slide">XEM THÊM</a></blockquote>
                             </div>
 						</div>
-					</div>
-					
-                    <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+					</div>	
+                    
+                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 						<div class="sl-slide-inner">
-							<div class="bg-img"><img src="images/slider1.jpg"></div>
-                            <div class="container">
-                                <h2>LỜI CHÀO  CỦA<br> <b>GIÁM ĐỐC</b></h2>
-                                <blockquote class="text-justify">Tại các nước có ngành công nghiệp đã phát triển thì nghiễm nhiên sau đó ngành IT cũng phát triển theo. Còn đối với các nước phát triển trễ hơn, hiện đang tập trung công nghiệp hóa (ví dụ Việt Nam) thì bắt buộc phải song song phát triển ngành IT.</blockquote>
-                                <blockquote class="text-right"><a href="about.html" class="btn btn-slide">XEM THÊM</a></blockquote>
+							<div class="bg-img"></div>
+                            <div class="container" class="text-center">
+                                <h2 >LỜI CHÀO CỦA GIÁM ĐỐC</h2>
+                                <blockquote><em>Tại các nước có ngành công nghiệp đã phát triển thì nghiễm nhiên sau đó ngành IT cũng phát triển theo. Còn đối với các nước phát triển trễ hơn, hiện đang tập trung công nghiệp hóa (ví dụ Việt Nam) thì bắt buộc phải song song phát triển ngành IT.</em></blockquote>                                
+                                <blockquote><img src="images/giamdoc.jpg" class="img-circle"></blockquote>
+                                <blockquote><a href="about.html" class="btn btn-slide">XEM THÊM</a></blockquote>
                             </div>
 						</div>
-					</div>
+					</div>	
+                    
+                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img"></div>
+                            <div class="container" class="text-center">
+                                <h2 >LỜI CHÀO CỦA GIÁM ĐỐC</h2>
+                                <blockquote><em>Tại các nước có ngành công nghiệp đã phát triển thì nghiễm nhiên sau đó ngành IT cũng phát triển theo. Còn đối với các nước phát triển trễ hơn, hiện đang tập trung công nghiệp hóa (ví dụ Việt Nam) thì bắt buộc phải song song phát triển ngành IT.</em></blockquote>                                
+                                <blockquote><img src="images/giamdoc.jpg" class="img-circle"></blockquote>
+                                <blockquote><a href="about.html" class="btn btn-slide">XEM THÊM</a></blockquote>
+                            </div>
+						</div>
+					</div>	
                     
 				</div><!-- /sl-slider -->
                 
@@ -173,16 +181,18 @@
 
 			</div><!-- /slider-wrapper -->
         </div>
-    </section>    
-    <nav id="nav-dots" class="nav-dots">
-        <div class="container">
-            <span class="nav-dot-current"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+    
+        <div id="nav-dots" class="nav-dots">
+            <div class="container">
+                <span class="nav-dot-current"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </nav>
+    </section>    
+    
     
     <div class="clearfix"></div>
     
@@ -191,13 +201,17 @@
         <!-- Service -->
         <section class="container">            
             <article class="row-fuild">
-                <h3 class="title">DỊCH VỤ</h3>    
+                <div class="title text-center">
+                    <a href="#" class="btn btn-title padding-left70 padding-right70 margin-bottom20">DỊCH VỤ</a> <br />
+                    We create amazing digital experience and help our customers reach <br />
+                    their goals 3x faster than our competitors.
+                </div>    
                 <div class="col-xs-3 thumnails">
                     <div class="col-xs-12 services">
                         <span class="shape1"></span>                         
                         <h4>THIẾT KẾ CHẾ TẠO PHẦN MỀM</h4>
                         <p class="content">Chúng tôi tìm hiểu vấn đề mà quý khách đang gặp phải để đưa ra đề xuất về ý tưởng phần mềm giúp quý khách giải quyết vấn đề đó. </p>
-                        <a href="" class="btn btn-slide">XEM THÊM</a>
+                        <a href="" class="btn btn-slide">XEM CHI TIẾT</a>
                     </div>
                 </div>
                 
@@ -206,7 +220,7 @@
                         <span class="shape2"></span>    
                         <h4>THIẾT KẾ CHẾ TẠO PHẦN MỀM</h4>
                         <p class="content">Chúng tôi tìm hiểu vấn đề mà quý khách đang gặp phải để đưa ra đề xuất về ý tưởng phần mềm giúp quý khách giải quyết vấn đề đó. </p>
-                        <a href="" class="btn btn-slide">XEM THÊM</a>
+                        <a href="" class="btn btn-slide">XEM CHI TIẾT</a>
                     </div>
                 </div>
                 
@@ -215,7 +229,7 @@
                         <span class="shape3"></span>  
                         <h4>TƯ VẤN QUẢN TRỊ DOANH NGHIỆP ỨNG DỤNG IT</h4>
                         <p class="content">Chúng tôi tìm hiểu vấn đề mà quý khách đang gặp phải để đưa ra đề xuất về ý tưởng phần mềm giúp quý khách giải quyết vấn đề đó. </p>
-                        <a href="" class="btn btn-slide">XEM THÊM</a>
+                        <a href="" class="btn btn-slide">XEM CHI TIẾT</a>
                     </div>
                 </div>
                 
@@ -224,7 +238,7 @@
                         <span class="shape4"></span>   
                         <h4>BÁN CÁC GÓI PHẦN MỀM</h4>
                         <p class="content">Chúng tôi tìm hiểu vấn đề mà quý khách đang gặp phải để đưa ra đề xuất về ý tưởng phần mềm giúp quý khách giải quyết vấn đề đó. </p>
-                        <a href="" class="btn btn-slide">XEM THÊM</a>
+                        <a href="" class="btn btn-slide">XEM CHI TIẾT</a>
                     </div>
                 </div>
             </article>            
@@ -257,13 +271,15 @@
                 });
             });
         </script>
-        <section class="product container">
-            <h4 class="title pull-left">SẢN PHẨM CÔNG TY</h4>
-            <div class="navi pull-right">
-                <a href="" class="btn btn-dark">XEM THÊM</a>
-                <a href="javascript:void(0)" id="prev" class="btn btn-dark">&lt;</a>
-                <a href="javascript:void(0)" id="next" class="btn btn-dark">&gt;</a>
-            </div>
+        <section class="container">
+            <div class="title text-center">
+                <a href="#" class="btn btn-title margin-bottom20">SẢN PHẨM CỦA CÔNG TY</a>                 
+                <a href="" class="btn btn-dark margin-bottom20 margin-lr30"><img src="images/icon-grid.png"></a>
+                <a href="javascript:void(0)" id="prev" class="btn btn-dark margin-bottom20"><img src="images/left-arrow.png"></a>
+                <a href="javascript:void(0)" id="next" class="btn btn-dark margin-bottom20"><img src="images/right-arrow.png"></a><br />
+                    We create amazing digital experience and help our customers reach <br />
+                    their goals 3x faster than our competitors.
+            </div>  
             <div class="clearfix"></div>
             
             <ul id="owl-product" class="product-images text-center owl-carousel">
@@ -360,15 +376,110 @@
         </section>        
     </section>
     
+    <!--Partner -->
+    <section class="container padding-bottom60 partner">
+            <div class="title text-center">
+                <a href="#" class="btn btn-title margin-bottom20">SẢN PHẨM CỦA CÔNG TY</a>                 
+                <a href="javascript:void(0)" id="prev" class="btn btn-dark margin-bottom20"><img src="images/left-arrow.png"></a>
+                <a href="javascript:void(0)" id="next" class="btn btn-dark margin-bottom20"><img src="images/right-arrow.png"></a><br />
+                    We create amazing digital experience and help our customers reach <br />
+                    their goals 3x faster than our competitors.
+            </div>  
+            <div class="clearfix"></div>
+            
+            <ul id="owl-partner" class="text-center owl-carousel">
+                <li class="item">
+                  <div>
+                      <img src="images/partner/grandspa-2.jpg" class="img-responsive" />
+                      </div>
+                </li>
+                <li class="item">
+                  <div>
+                      <img src="images/partner/mkgroup-2.jpg" class="img-responsive" />
+                      </div>
+                </li>
+                <li class="item">
+                  <div>
+                      <img src="images/partner/sakura-2.jpg" class="img-responsive" />
+                      </div>
+                </li>
+                <li class="item">
+                  <div>
+                      <img src="images/partner/tanco-2.jpg" class="img-responsive" />
+                      </div>
+                </li>
+                <li class="item">
+                  <div>
+                      <img src="images/partner/grandspa-2.jpg" class="img-responsive" />
+                      </div>
+                </li>
+                <li class="item">
+                  <div>
+                      <img src="images/partner/mkgroup-2.jpg" class="img-responsive" />
+                      </div>
+                </li>
+                <li class="item">
+                  <div>
+                      <img src="images/partner/sakura-2.jpg" class="img-responsive" />
+                      </div>
+                </li>
+                <li class="item">
+                  <div>
+                      <img src="images/partner/tanco-2.jpg" class="img-responsive" />
+                      </div>
+                </li>
+            </ul>
+            <!-- owl carousel product -->
+             <script>
+                $(document).ready(function() {
+
+                  var owl_partner = $("#owl-partner");
+
+                  owl_partner.owlCarousel({
+                      autoWidth:true,
+                      items : 4, //10 items above 1000px browser width
+                      navSpeed: 500,
+                      itemsCustom : false,
+                      itemsDesktop : [1199,4],
+                      itemsDesktopSmall : [1024,3],
+                      itemsTablet: [768,2],
+                      itemsTabletSmall: [480,1],
+                      itemsMobile : [479,1],
+                      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+                      
+                      //Autoplay
+                      autoPlay : true,
+                      stopOnHover : true,
+                      // Responsive 
+                      responsive: true,
+                      responsiveRefreshRate : 200,
+                      responsiveBaseWidth: window,
+                  });
+
+                  // Custom Navigation Events
+                  $("#next").click(function(){
+                    owl_partner.trigger('owl.next');
+                  });
+                  $("#prev").click(function(){
+                    owl_partner.trigger('owl.prev');
+                  });
+                 
+                });
+                </script>
+        </section>        
+    </section>
+
     <!-- News -->
     <section class="news container-fuild">
         <article class="container">
-            <h4 class="title pull-left">TIN TỨC</h4>
-            <div class="navi pull-right">
-                <a href="" class="btn btn-dark">XEM THÊM</a>
-                <a href="javascript:void(0)" id="prevn" class="btn btn-dark">&lt;</a>
-                <a href="javascript:void(0)" id="nextn" class="btn btn-dark">&gt;</a>
-            </div>
+            <div class="title text-center">
+                <a href="#" class="btn btn-title padding-left70 padding-right70 margin-bottom20">TIN TỨC</a>                 
+                <a href="" class="btn btn-dark margin-bottom20 margin-lr30"><img src="images/icon-grid.png"></a>
+                <a href="javascript:void(0)" id="prevn" class="btn btn-dark margin-bottom20"><img src="images/left-arrow.png"></a>
+                <a href="javascript:void(0)" id="nextn" class="btn btn-dark margin-bottom20"><img src="images/right-arrow.png"></a><br />
+                    We create amazing digital experience and help our customers reach <br />
+                    their goals 3x faster than our competitors.
+            </div>  
             <div class="clearfix"></div>
             <div id="owl-news" class="owl-carousel">
                 <div class="col-xs-12 item">
@@ -453,9 +564,9 @@
              <script>
                 $(document).ready(function() {
 
-                  var owl = $("#owl-news");
+                  var owl_news = $("#owl-news");
 
-                  owl.owlCarousel({
+                  owl_news.owlCarousel({
                       autoWidth:true,
                       items : 3, //10 items above 1000px browser width
                       navSpeed: 1000,
@@ -478,10 +589,10 @@
 
                   // Custom Navigation Events
                   $("#nextn").click(function(){
-                    owl.trigger('owl.next');
+                    owl_news.trigger('owl.next');
                   });
                   $("#prevn").click(function(){
-                    owl.trigger('owl.prev');
+                    owl_news.trigger('owl.prev');
                   });
                  
                 });
@@ -602,40 +713,6 @@
 			});
     </script>
     
-    
-    <!-- JS Full Background Image and show/hidden small logo -->
-    <script>
-        $.backstretch('images/header.jpg');
-        
-        jQuery("document").ready(function($){
-            $('#logo').hide();
-            var nav = $('#navigation');
-            var position = nav.position();
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > position.top) {
-                    nav.addClass("fixed");
-                    $('#logo').show();
-                } else {
-                    nav.removeClass("fixed");
-                    $('#logo').hide();
-                }
-            });
-
-        });
-        
-        $(document).ready(function(){
-	/*
-        //Check to see if the window is top if not then display button
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 400) {
-                $('#logo').fadeIn();
-            } else {
-                $('#logo').fadeOut();
-            }
-        });*/
-
-    });        
-   
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
